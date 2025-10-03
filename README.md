@@ -105,6 +105,3 @@ To add support for additional services:
 
 AK DINESH   https://github.com/akdinesh2003
 
----
-
-Made with ❤️ for developers who need to validate their API keys quickly and easily.
