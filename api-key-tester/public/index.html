@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Key Validator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>API Key Validator</h1>
+            <p>Test your API keys to ensure they are valid and working</p>
+        </header>
+        
+        <main>
+            <div class="card">
+                <h2>Validate Your API Key</h2>
+                <form id="apiKeyForm">
+                    <div class="form-group">
+                        <label for="service">Service Provider</label>
+                        <select id="service" required>
+                            <option value="">Select a service</option>
+                            <option value="openai">OpenAI</option>
+                            <option value="google">Google Cloud</option>
+                            <option value="github">GitHub</option>
+                            <option value="groq">Groq</option>
+                            <option value="anthropic">Anthropic</option>
+                            <option value="aws">AWS</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="apiKey">API Key</label>
+                        <input type="password" id="apiKey" placeholder="Enter your API key" required>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary">Validate Key</button>
+                </form>
+                
+                <div id="result" class="result hidden">
+                    <div id="resultMessage"></div>
+                </div>
+            </div>
+            
+            <div class="instructions">
+                <h3>How to Use</h3>
+                <ol>
+                    <li>Select the service provider for your API key</li>
+                    <li>Enter your API key in the input field</li>
+                    <li>Click "Validate Key" to test your API key</li>
+                    <li>View the results to see if your key is valid</li>
+                </ol>
+            </div>
+        </main>
+        
+        <footer>
+            <p>API Key Validator &copy; 2025 | Test your API keys securely</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
